@@ -28,7 +28,7 @@ export function Booking() {
                     &nbsp; Select Your Car Type{" "}
                     <b className="text-orange-600">*</b>
                   </label>
-                  <select className="border border-gray-300 rounded p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none">
+                  <select className="border border-gray-300 rounded-2xl p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none">
                     <option>Select your car type</option>
                     <option value="Audi A1 S-Line">Audi A1 S-Line</option>
                     <option value="VW Golf 6">VW Golf 6</option>
@@ -62,7 +62,7 @@ export function Booking() {
                     </svg>{" "}
                     &nbsp; Pick-up <b className="text-orange-600">*</b>
                   </label>
-                  <select className="border border-gray-300 rounded p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none">
+                  <select className="border border-gray-300 rounded-2xl p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none">
                     <option>Select pick up location</option>
                     <option>Belgrade</option>
                     <option>Novi Sad</option>
@@ -93,7 +93,7 @@ export function Booking() {
                     </svg>{" "}
                     &nbsp; Drop-of <b className="text-orange-600">*</b>
                   </label>
-                  <select className="border border-gray-300 rounded p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none">
+                  <select className="border border-gray-300 rounded-2xl p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none">
                     <option>Select drop off location</option>
                     <option>Novi Sad</option>
                     <option>Belgrade</option>
@@ -128,7 +128,7 @@ export function Booking() {
                     id="picktime"
                     type="date"
                     value=""
-                    className="border border-gray-300 rounded p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none"
+                    className="border border-gray-300 rounded-2xl p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none"
                   ></input>
                 </div>
                 <div className="box-form__drop-of-time flex flex-col">
@@ -157,9 +157,10 @@ export function Booking() {
                     id="picktime"
                     type="date"
                     value=""
-                    className="border border-gray-300 rounded p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none"
+                    className="border border-gray-300 rounded-2xl p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none"
                   ></input>
                 </div>
+                <button className="bg-orange-600 text-white p-4 font-semibold text-lg rounded-full">Search</button>
               </form>
             </div>
           </div>
