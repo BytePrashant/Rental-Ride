@@ -1,6 +1,7 @@
 import { Appbar } from '@/components/Appbar'
 import { Homepage } from '@/components/Homepage'
 import { Booking } from '@/components/Booking'
+import { Plan } from '@/components/Plan'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <Appbar></Appbar>
         <Homepage></Homepage>
         <Booking></Booking>
+        <Plan></Plan>
       </div>
     )
 }
