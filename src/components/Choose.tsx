@@ -3,7 +3,7 @@ export function Choose() {
     <div>
       <section
         id="Choose-section"
-        className="bg-white bg-no-repeat bg-left py-10"
+        className="bg-white bg-no-repeat bg-left py-10 font-custom1"
         style={{ backgroundImage: "url('choose-bg.png')" }}
       >
         <div className="container mx-auto px-10">
