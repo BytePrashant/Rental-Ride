@@ -5,7 +5,7 @@ export function Plan() {
         <div className="container mx-auto px-10">
           <div className="plan-content flex flex-col items-center justify-center h-auto w-auto relative md:justify-center">
             <div className="plan-title flex flex-col text-center">
-              <h3 className="font-semibold text-2xl ">Plan your trip now</h3>
+              <h3 className="font-semibold text-2xl">Plan your trip now</h3>
               <h2 className="font-bold text-4xl my-5 leading-normal">
                 Quick & easy car rental
               </h2>
