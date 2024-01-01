@@ -1,10 +1,10 @@
 export function Booking() {
   return (
     <div>
-      <section id="Booking" className="font-custom1">
+      <section id="Booking" className="font-custom1 py-16">
         <div className="container mx-auto px-10">
-          <div className="booking-content flex items-center justify-center h-screen w-auto relative md:justify-center">
-            <div className="booking-content-box bg-white bg-cover bg-center bg-no-repeat shadow-lg rounded-md text-black w-full h-auto px-14 py-12 relative">
+          <div className="booking-content flex items-center justify-center h-auto w-auto relative md:justify-center">
+            <div className="booking-content-box bg-white bg-cover bg-center bg-no-repeat shadow-lg rounded-md text-black w-full h-auto px-4 py-6 relative">
               <h2 className="text-2xl font-bold mb-8">Book a car</h2>
               <form className="box-form grid grid-rows-4 gap-5">
                 <div className="box-form__car-type flex flex-col">
@@ -160,7 +160,11 @@ export function Booking() {
                     className="border border-gray-300 rounded-2xl p-3 pl-4 text-gray-500 font-rubik text-md font-normal outline-none"
                   ></input>
                 </div>
-                <button className="bg-orange-600 text-white p-4 font-semibold text-lg rounded-full">Search</button>
+                <button
+                  className="text-white bg-gradient-to-br from-red-500 to-orange-400 font-semibold rounded-3xl px-5 py-2.5 text-center me-2 mb-2"
+                >
+                  Search
+                </button>
               </form>
             </div>
           </div>
