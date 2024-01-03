@@ -9,14 +9,12 @@ export function Choose() {
         <div className="container mx-auto px-10">
           <img src="./choose-car.png" alt="" className="w-full h-auto m-auto" />
           <div className="text-container flex flex-col gap-12">
-            <div className="text-container-left">
-              <h4 className="text-xl font-bold flex text-center justify-center mb-2">
-                Why Choose Us
-              </h4>
-              <h2 className="text-4xl font-bold flex text-center justify-center mb-4">
+            <div className="text-container-left flex flex-col text-center">
+              <h4 className="text-xl font-semibold mb-2">Why Choose Us</h4>
+              <h2 className="text-5xl font-bold mb-4 leading-tight">
                 Best valued deals you will ever find
               </h2>
-              <p className="flex text-center justify-center leading-normal text-md text-gray-500 mb-4">
+              <p className="leading-normal text-gray-500 mb-4">
                 Discover the best deals you'll ever find with our unbeatable
                 offers. We're dedicated to providing you with the best value for
                 your money, so you can enjoy top-quality services and products
@@ -89,3 +87,5 @@ export function Choose() {
     </div>
   );
 }
+
+
