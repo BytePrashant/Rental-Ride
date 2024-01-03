@@ -5,6 +5,8 @@ import { Plan } from '@/components/Plan'
 import { Pick } from '@/components/Pick'
 import { Banner } from '@/components/Banner'
 import { Choose } from '@/components/Choose'
+import { Testimonial } from '@/components/Testimonial'
+import { FAQ } from '@/components/FAQ'
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
         <Pick></Pick>
         <Banner></Banner>
         <Choose></Choose>
+        <Testimonial></Testimonial>
+        <FAQ></FAQ>
       </div>
     )
 }
