@@ -89,7 +89,7 @@
                     </div>
                   </div>
                   <a
-                    className="text-white flex justify-center bg-gradient-to-br from-red-500 to-orange-400 font-bold text-2xl gap-6 p-2 w-full"
+                    className="text-white flex justify-center bg-gradient-to-br from-red-500 to-orange-400 font-semibold text-xl gap-6 p-2 w-full"
                     href="#booking-section"
                   >
                     Reserve Now
