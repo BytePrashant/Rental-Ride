@@ -8,6 +8,7 @@ import { Choose } from '@/components/Choose'
 import { Testimonial } from '@/components/Testimonial'
 import { FAQ } from '@/components/FAQ'
 import { Download } from '@/components/Download'
+import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Testimonial></Testimonial>
         <FAQ></FAQ>
         <Download></Download>
+        <Footer></Footer>
       </div>
     )
 }
