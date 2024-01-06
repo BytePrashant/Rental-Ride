@@ -1,40 +1,40 @@
 export function Testimonial() {
   return (
-    <div>
-      <section id="Testimonial" className="font-custom1 py-24 bg-gray-50">
-        <div className="container mx-auto px-10">
-          <div className="content flex flex-col">
-            <div className="title flex flex-col text-center mb-10">
-              <h4 className="text-xl font-semibold">Reviewed by People</h4>
-              <h2 className="font-bold text-5xl mb-4 leading-tight">
-                Our Clients
-              </h2>
-              <p className="text-gray-500">
-                Discover the positive impact we've made on the our clients by
-                reading through their testimonials. Our clients have experienced
-                our service and results, and they're eager to share their
-                positive experiences with you.
+    <section id="Testimonial" className="font-custom1 py-24 bg-gray-50 ">
+      <div className="container mx-auto px-10 ">
+        <div className="content flex flex-col">
+          <div className="title flex flex-col text-center mb-10 md:mx-96">
+            <h4 className="text-xl font-semibold">Reviewed by People</h4>
+            <h2 className="font-bold text-5xl mb-4 leading-tight">
+              Our Clients
+            </h2>
+            <p className="text-gray-500">
+              Discover the positive impact we've made on the our clients by
+              reading through their testimonials. Our clients have experienced
+              our service and results, and they're eager to share their positive
+              experiences with you.
+            </p>
+          </div>
+          <div className="testimonies flex flex-col gap-12 justify-center w-full md:grid md:grid-cols-2 md:py-10 md:px-32">
+            <div className="box-1 bg-white shadow-xl px-5 py-8 flex flex-col">
+              <p className="font-semibold text-xl mb-10">
+                "We rented a car from this website and had an amazing
+                experience! The booking was easy and the rental rates were very
+                affordable. "
               </p>
-            </div>
-            <div className="testimonies flex flex-col gap-12 justify-center w-full">
-              <div className="box-1 bg-white shadow-xl px-5 py-8 flex flex-col">
-                <p className="font-semibold text-xl mb-10">
-                  "We rented a car from this website and had an amazing
-                  experience! The booking was easy and the rental rates were
-                  very affordable. "
-                </p>
+              <div className="md:flex md:justify-between md:items-center">
                 <div className="name flex justify-between items-center">
                   <img
                     src="./harry.png"
                     alt="user_img"
-                    className="rounded-full w-24 h-24"
+                    className="rounded-full w-24 h-24 md:mr-3"
                   />
                   <span>
                     <h4 className="font-bold">Hari Putter</h4>
                     <p>Punjab</p>
                   </span>
                 </div>
-                <span className="quotes-icon hidden">
+                <span className="quotes-icon hidden md:flex">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="60"
@@ -52,23 +52,25 @@ export function Testimonial() {
                   </svg>
                 </span>
               </div>
-              <div className="box-2 bg-white shadow-xl px-5 py-8 flex flex-col">
-                <p className="font-semibold text-xl mb-10">
-                  "The car was in great condition and made our trip even better.
-                  Highly recommend for this car rental website!"
-                </p>
+            </div>
+            <div className="box-2 bg-white shadow-xl px-5 py-8 flex flex-col md:justify-between">
+              <p className="font-semibold text-xl mb-10">
+                "The car was in great condition and made our trip even better.
+                Highly recommend for this car rental website!"
+              </p>
+              <div className="md:flex md:justify-between md:items-center">
                 <div className="name flex justify-between items-center">
                   <img
                     src="./ron.png"
                     alt="user_img"
-                    className="rounded-full w-24 h-24"
+                    className="rounded-full w-24 h-24 md:mr-3"
                   />
                   <span>
                     <h4 className="font-bold">Ron Grizzly</h4>
                     <p>Bihar</p>
                   </span>
                 </div>
-                <span className="quotes-icon hidden">
+                <span className="quotes-icon hidden md:flex ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="60"
@@ -89,7 +91,7 @@ export function Testimonial() {
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

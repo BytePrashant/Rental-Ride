@@ -2,7 +2,7 @@ export const Footer: React.FC = () => {
     return (
       <footer className="font-custom1 py-24  bg-gray-50">
         <div className="container mx-auto px-10">
-          <div className="content grid grid-cols-1 gap-8">
+          <div className="content grid grid-cols-1 gap-8 md:grid md:grid-cols-4">
             <ul className="footer-content__1 text-center">
               <li className="text-3xl font-semibold mb-4">Rental Ride</li>
               <li className="text-gray-500 mb-8">
@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
                 Mon - Fri: 9:00AM - 9:00PM
               </li>
               <li className="font-medium mb-2 text-gray-500">
-                Sat: 9:00AM - 19:00PM
+                Sat: 9:00AM - 7:00PM
               </li>
               <li className="font-medium mb-2 text-gray-500">Sun: Closed</li>
             </ul>
@@ -102,15 +102,15 @@ export const Footer: React.FC = () => {
                   Subscribe your Email address for latest news &amp; updates.
                 </p>
               </li>
-              <li className="bg-gray-200 font-normal text-base mt-4 p-2 pl-14 pr-14 mb-4">
+              <li className="bg-gray-200 font-normal text-base mt-4 p-2 pl-14 pr-14 mb-4 rounded-xl">
                 <input
                   type="email"
                   placeholder="Enter Email Address"
-                  className="bg-gray-200"
+                  className="bg-gray-200 "
                 />
               </li>
               <li>
-                <button className="text-white flex justify-center bg-gradient-to-br from-red-500 to-orange-400 font-semibold text-xl gap-6 p-2 w-full">
+                <button className="text-white flex justify-center bg-gradient-to-br from-red-500 to-orange-400 rounded-xl font-semibold text-xl gap-6 p-2 w-full">
                   Submit
                 </button>
               </li>
