@@ -1,80 +1,82 @@
+import Link from "next/link";
+
 export function Homepage() {
   return (
     <div className="md:mx-14">
       <img className="hidden md:flex right-0 absolute" src="./hero-bg.png" />
       <div className="navbar flex relative top-0 right-0 left-0 p-6 justify-between items-center">
         <div>
-          <a href="/">
+          <Link href="/">
             <img
-              src="./logo.png"
+              src="./rental-ride-logo.png"
               alt="logo-img"
-              className="w-[170px] h-[30px]"
+              className="w-[200px] h-[60px]"
             />
-          </a>
+          </Link>
         </div>
         <ul className="navbar__links hidden md:flex gap-6 font-semibold">
           <li>
-            <a
+            <Link
               className="home-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
               href="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="about-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
-              href="/"
+              href="/about"
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="models-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
               href="/"
             >
               Vehicle Models
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="testi-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
               href="/"
             >
               Testimonials
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="team-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
               href="/"
             >
               Our Team
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              className="contact-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
+            <Link
               href="/"
+              className="contact-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="navbar__buttons hidden md:flex gap-4 font-semibold items-center">
-          <a
+          <Link
+            href="/login"
             className="navbar__buttons__sign-in hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
-            href="/"
           >
             Sign In
-          </a>
-          <a
+          </Link>
+          <Link
+            href="/register"
             className="navbar__buttons__register flex justify-center text-white bg-gradient-to-br from-red-500 to-orange-400 font-semibold px-5 py-2 text-center rounded-xl w-32 hover:bg-gradient-to-br hover:from-red-600 hover:to-orange-500"
-            href="/"
           >
             Register
-          </a>
+          </Link>
         </div>
         <div className="mobile-hamb md:hidden">
           <svg
