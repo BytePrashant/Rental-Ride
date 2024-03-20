@@ -41,7 +41,7 @@ export function Navbar() {
           <li>
             <Link
               className="testi-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
-              href="/"
+              href="/testimonial"
             >
               Testimonials
             </Link>
