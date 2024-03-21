@@ -56,7 +56,7 @@ export function Navbar() {
           </li>
           <li>
             <Link
-              href="/"
+              href="/contact"
               className="contact-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
             >
               Contact
