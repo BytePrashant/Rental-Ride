@@ -3,8 +3,8 @@ export function ContactForm() {
     <>
       <section id="Pick-Car" className="font-custom1 py-16 md:mx-14">
         <div className="container mx-auto px-10">
-          <div className="Contact-content flex flex-col md:flex-row md:items-center md:w-1/2">
-            <div className="flex flex-col text-center">
+          <div className="Contact-content flex flex-col md:flex-row md:gap-40">
+            <div className="flex flex-col text-center gap-4 md:w-1/2">
               <h2 className="font-bold text-4xl mt-2 mb-3 leading-normal">
                 Need additional information?
               </h2>
@@ -67,8 +67,8 @@ export function ContactForm() {
                 &nbsp; Bangalore, India
               </a>
             </div>
-            <div className="flex flex-col">
-              <form className="max-w-sm mx-auto">
+            <div className="flex flex-col md:w-1/2">
+              <form className="">
                 <div className="mb-5">
                   <label
                     htmlFor="name"
@@ -79,7 +79,7 @@ export function ContactForm() {
                   <input
                     type="name"
                     id="name"
-                    className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400"
+                    className="w-full shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:border-gray-600 dark:placeholder-gray-400"
                     placeholder="your name"
                     required
                   />
@@ -94,7 +94,7 @@ export function ContactForm() {
                   <input
                     type="email"
                     id="email"
-                    className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400"
+                    className="w-full shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:border-gray-600 dark:placeholder-gray-400"
                     placeholder="name@gmail.com"
                     required
                   />
@@ -108,12 +108,12 @@ export function ContactForm() {
                   </label>
                   <textarea
                     id="message"
-                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 "
+                    className="w-full block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400"
                     placeholder="Leave a comment..."
                   ></textarea>
                   <button
                     type="submit"
-                    className="flex mt-4 justify-center text-white bg-gradient-to-br from-red-500 to-orange-400 font-semibold px-5 py-2.5 text-center rounded-xl w-48 gap-2 hover:bg-gradient-to-br hover:from-red-600 hover:to-orange-500"
+                    className="flex mt-8 justify-center text-white bg-gradient-to-br from-red-500 to-orange-400 font-semibold px-5 py-2.5 text-center rounded-xl w-48 gap-2 hover:bg-gradient-to-br hover:from-red-600 hover:to-orange-500"
                   >
                     Submit
                   </button>
