@@ -2,7 +2,7 @@ export const VehicleModels = () => {
   return (
     <>
       <section id="Vehicle-Models" className="font-custom1 py-16 md:mx-14">
-        <div className="container mx-auto px-10">
+        <div className="container mx-auto px-10 md:flex">
           <div className="content flex flex-col md:flex-row md:gap-40">
             <div className="Models border border-solid border-slate-200">
               <div className="model-content p-4">
