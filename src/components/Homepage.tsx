@@ -3,7 +3,7 @@ import { Navbar } from "./Navbar";
 
 export function Homepage() {
   return (
-    <div className="md:mx-14">
+    <div>
       <img className="hidden md:flex right-0 absolute" src="./hero-bg.png" />
       <Navbar/>
       <section id="Home" className="font-custom1">
