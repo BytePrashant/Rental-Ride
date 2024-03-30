@@ -3,7 +3,7 @@ import { Banner } from "../components/Banner";
 import { Testimonial } from "../components/Testimonial";
 import { Navbar } from "../components/Navbar";
 
-export default function () {
+export default() => {
     return (
         <>
         <Navbar/>

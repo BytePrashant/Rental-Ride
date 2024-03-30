@@ -6,8 +6,8 @@ import { Navbar } from "../components/Navbar";
 function About() {
   return (
     <>
-      <section id="About" className="font-custom1">
         <Navbar />
+      <section id="About" className="font-custom1">
         <div className="container mx-auto px-10">
           <div className="about-main grid grid-rows-1 gap-8 md:flex md:flex-row md:mx-36">
             <img
