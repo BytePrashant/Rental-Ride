@@ -16,60 +16,62 @@ export function Navbar() {
             />
           </Link>
         </div>
-        <ul
-          className={`navbar__links ${
-            isMobileMenuOpen ? 'block' : 'hidden'
-          } md:flex gap-6 font-semibold bg-slate-200 p-4 absolute top-20 right-4`}
-        >
-          <li>
-            <Link
-              className="home-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
-              href="/"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="about-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
-              href="/about"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="models-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
-              href="/vehicles"
-            >
-              Vehicles
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="testi-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
-              href="/testimonial"
-            >
-              Testimonials
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="team-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
-              href="/team"
-            >
-              Our Team
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className="contact-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <div  className={`navbar__links ${
+              isMobileMenuOpen ? "block" : "hidden"
+            } md:flex`}>
+          <ul
+            className="flex flex-col absolute top-16 right-6 font-medium p-4 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <Link
+                className="home-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
+                href="/"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="about-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
+                href="/about"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="models-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
+                href="/vehicles"
+              >
+                Vehicles
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="testi-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
+                href="/testimonial"
+              >
+                Testimonials
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="team-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
+                href="/team"
+              >
+                Our Team
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="contact-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div className="navbar__buttons hidden md:flex gap-4 font-semibold items-center">
           <Link
             href="/login"
