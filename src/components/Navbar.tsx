@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export function Navbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isOpen, setisOpen] = useState(false);
 
   return (
     <>
@@ -16,12 +16,12 @@ export function Navbar() {
             />
           </Link>
         </div>
-        <div  className={`navbar__links ${
-              isMobileMenuOpen ? "block" : "hidden"
-            } md:flex`}>
-          <ul
-            className="flex flex-col absolute top-16 right-6 font-medium p-4 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-          >
+        <div
+          className={`navbar__links ${
+            isOpen ? "block" : "hidden"
+          } md:relative md:flex md:space-x-4 md:gap-4`}
+        >
+          <ul className="md:static flex flex-col absolute w-full top-20 gap-2 items-center bg-white md:bg-transparent right-0 font-medium p-4 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
               <Link
                 className="home-link hover:text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400"
@@ -89,7 +89,7 @@ export function Navbar() {
         <div
           className="mobile-hamb md:hidden"
           onClick={() => {
-            setIsMobileMenuOpen(!isMobileMenuOpen);
+            setisOpen(!isOpen);
           }}
         >
           <svg
